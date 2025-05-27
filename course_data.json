@@ -1,0 +1,13 @@
+{
+    "courses": [
+        {
+            "name": "MTE",
+            "description": "140"
+        },
+        {
+            "name": "MTE",
+            "description": "120"
+        }
+    ],
+    "professors": []
+}
