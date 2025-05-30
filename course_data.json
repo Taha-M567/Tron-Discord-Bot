@@ -1,13 +1,399 @@
 {
     "courses": [
         {
-            "name": "MTE",
-            "description": "140"
+            "name": "MATH",
+            "description": "118",
+            "full_name": "Calculus 2 (Eng)",
+            "units": 0.50,
+            "components": [
+                {
+                    "type": "LEC",
+                    "section": "004",
+                    "schedule": "MWF 3:30PM - 4:20PM",
+                    "room": "RCH 103",
+                    "dates": [
+                        "05/05/2025 - 06/13/2025",
+                        "06/23/2025 - 07/30/2025"
+                    ]
+                },
+                {
+                    "type": "LEC",
+                    "section": "004",
+                    "schedule": "T 10:30AM - 11:20AM",
+                    "room": "EIT 1015",
+                    "dates": [
+                        "05/27/2025",
+                        "06/10/2025",
+                        "07/08/2025"
+                    ]
+                },
+                {
+                    "type": "TUT",
+                    "section": "108",
+                    "schedule": "F 12:30PM - 2:20PM",
+                    "room": "DWE 3518",
+                    "dates": [
+                        "05/05/2025 - 06/13/2025",
+                        "06/23/2025 - 07/30/2025"
+                    ]
+                },
+                {
+                    "type": "TST",
+                    "section": "201",
+                    "schedule": "W 8:30AM - 10:20AM",
+                    "room": "TBA",
+                    "dates": [
+                        "06/18/2025"
+                    ]
+                }
+            ]
         },
         {
             "name": "MTE",
-            "description": "120"
+            "description": "119",
+            "full_name": "Statics",
+            "units": 0.50,
+            "components": [
+                {
+                    "type": "LEC",
+                    "section": "001",
+                    "schedule": "TTh 8:30AM - 9:50AM",
+                    "room": "EIT 1015",
+                    "dates": [
+                        "05/05/2025 - 06/13/2025",
+                        "06/23/2025 - 07/30/2025"
+                    ]
+                },
+                {
+                    "type": "LEC",
+                    "section": "001",
+                    "schedule": "M 12:30PM - 1:20PM",
+                    "room": "RCH 103",
+                    "dates": [
+                        "05/12/2025",
+                        "06/02/2025",
+                        "07/14/2025"
+                    ]
+                },
+                {
+                    "type": "TUT",
+                    "section": "102",
+                    "schedule": "W 10:30AM - 11:20AM",
+                    "room": "MC 4058",
+                    "dates": [
+                        "05/05/2025 - 06/13/2025",
+                        "06/23/2025 - 07/30/2025"
+                    ]
+                },
+                {
+                    "type": "TST",
+                    "section": "201",
+                    "schedule": "Th 8:30AM - 10:20AM",
+                    "room": "TBA",
+                    "dates": [
+                        "06/19/2025"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "MTE",
+            "description": "120",
+            "full_name": "Circuits",
+            "units": 0.75,
+            "components": [
+                {
+                    "type": "LEC",
+                    "section": "001",
+                    "schedule": "M 1:30PM - 2:20PM",
+                    "room": "RCH 103",
+                    "dates": [
+                        "05/05/2025 - 06/13/2025",
+                        "06/23/2025 - 07/30/2025"
+                    ]
+                },
+                {
+                    "type": "LEC",
+                    "section": "001",
+                    "schedule": "T 12:00PM - 12:50PM",
+                    "room": "RCH 302",
+                    "dates": [
+                        "05/05/2025 - 06/13/2025",
+                        "06/23/2025 - 07/30/2025"
+                    ]
+                },
+                {
+                    "type": "LEC",
+                    "section": "001",
+                    "schedule": "W 12:30PM - 2:20PM",
+                    "room": "RCH 302",
+                    "dates": [
+                        "05/05/2025 - 06/13/2025",
+                        "06/23/2025 - 07/30/2025"
+                    ]
+                },
+                {
+                    "type": "LEC",
+                    "section": "001",
+                    "schedule": "M 12:30PM - 1:20PM",
+                    "room": "RCH 103",
+                    "dates": [
+                        "05/26/2025",
+                        "06/09/2025",
+                        "07/07/2025",
+                        "07/21/2025"
+                    ]
+                },
+                {
+                    "type": "LEC",
+                    "section": "001",
+                    "schedule": "F 12:30PM - 2:20PM",
+                    "room": "TBA",
+                    "dates": [
+                        "06/20/2025"
+                    ]
+                },
+                {
+                    "type": "LAB",
+                    "section": "101",
+                    "schedule": "M 8:30AM - 11:20AM",
+                    "room": "E2 1792",
+                    "dates": [
+                        "05/05/2025 - 06/13/2025",
+                        "06/23/2025 - 07/30/2025"
+                    ]
+                },
+                {
+                    "type": "TUT",
+                    "section": "201",
+                    "schedule": "T 1:00PM - 1:50PM",
+                    "room": "E2 1792",
+                    "dates": [
+                        "05/05/2025 - 06/13/2025",
+                        "06/23/2025 - 07/30/2025"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "MTE",
+            "description": "140",
+            "full_name": "Algorithms & Data Structures",
+            "units": 0.50,
+            "components": [
+                {
+                    "type": "LEC",
+                    "section": "001",
+                    "schedule": "TTh 2:30PM - 3:50PM",
+                    "room": "RCH 103",
+                    "dates": [
+                        "05/05/2025 - 06/13/2025",
+                        "06/23/2025 - 07/30/2025"
+                    ]
+                },
+                {
+                    "type": "LEC",
+                    "section": "001",
+                    "schedule": "T 10:30AM - 11:20AM",
+                    "room": "EIT 1015",
+                    "dates": [
+                        "05/20/2025",
+                        "06/24/2025",
+                        "07/22/2025"
+                    ]
+                },
+                {
+                    "type": "LAB",
+                    "section": "101",
+                    "schedule": "Th 10:30AM - 12:20PM",
+                    "room": "E2 1792",
+                    "dates": [
+                        "05/05/2025 - 06/13/2025",
+                        "06/23/2025 - 07/30/2025"
+                    ]
+                },
+                {
+                    "type": "TST",
+                    "section": "201",
+                    "schedule": "T 10:30AM - 12:20PM",
+                    "room": "TBA",
+                    "dates": [
+                        "06/17/2025"
+                    ]
+                }
+            ]
         }
     ],
-    "professors": []
+    "professors": [
+        {
+            "name": "Ryan Trelford",
+            "email": "r2trelfo@uwaterloo.ca",
+            "office": "MC 6514",
+            "courses": ["MATH 118"],
+            "office_hours": {
+                "Monday": "11:30am - 1:00pm",
+                "Wednesday": "11:30am - 12:30pm",
+                "Thursday": "12:00pm - 1:30pm",
+                "Friday": "12:30pm - 1:30pm"
+            }
+        },
+        {
+            "name": "Erik Séguin",
+            "email": "e2seguin@uwaterloo.ca",
+            "office": "MC 5323",
+            "courses": ["MATH 118"],
+            "office_hours": {
+                "Wednesday": "5:30pm - 6:30pm",
+                "Friday": "5:30pm - 6:30pm"
+            }
+        },
+        {
+            "name": "Owen Sharpe",
+            "email": "ojsharpe@uwaterloo.ca",
+            "office": "MC 5414",
+            "courses": ["MATH 118"],
+            "office_hours": {
+                "Monday": "11:30am - 12:30pm",
+                "Wednesday": "11:30am - 12:30pm",
+                "Friday": "11:30am - 12:30pm"
+            }
+        },
+        {
+            "name": "Naveen Chandrashekar",
+            "office": "E3-2115",
+            "phone": "519-804-6251",
+            "email": "nchandra@uwaterloo.ca",
+            "courses": ["MTE 119"],
+            "office_hours": {
+                "Thursday": "12:30 PM - 1:30 PM"
+            }
+            
+        },
+        {
+            "name": "Omar Al-Buraiki",
+             "email": "ojsharpe@uwaterloo.ca",
+            "courses": ["MTE 120"],
+            "office_hours": "Book by appointment"
+        },
+        {
+            "name": "Nasim Paryab",
+            "email": "nparyab@uwaterloo.ca",
+            "courses": ["MTE 140"]
+        },
+        {
+            "name": "Yimin Wu",
+            "office": "E7-3418",
+            "email": "yimin.wu@uwaterloo.ca",
+            "courses": ["MTE 111"],
+            "office_hours": "Book by appointment"
+        }
+    ],
+    "academic_support": {
+        "eist_tutors": {
+            "name": "Engineering Instructional Support Tutors (EISTs)",
+            "description": "Drop-in office hours for calculus questions",
+            "location": "E2 1786 or online on Microsoft Teams",
+            "teams_code": "dhgng6x",
+            "hours": "Monday to Friday 9:30am - 5:30pm",
+            "availability_note": "Starting on the first day of classes"
+        },
+        "first_year_engineering_office": {
+            "name": "First Year Engineering Office",
+            "description": "For any questions about your program",
+            "website": "https://uwaterloo.ca/engineering/undergraduate-students/first-year",
+            "email": "firstyear.engineering@uwaterloo.ca",
+            "location": "E2 1772",
+            "academic_advising": {
+                "website": "https://uwaterloo.ca/engineering/undergraduate-students/academic-support/academic-advisors",
+                "booking_link": "https://outlook.office365.com/book/bkg-AdvisingFirstYearEngineering@uwaterloo.ca/"
+            }
+        }
+    },
+    "teaching_assistants": [
+        {
+            "name": "Ariyanna Kresnyak",
+            "courses": ["MTE 120"],
+            "roles": ["LAB", "TUTORIAL", "HELP"],
+            "email": "akresnyak@uwaterloo.ca"
+        },
+        {
+            "name": "Denys Vidish",
+            "courses": ["MTE 120"],
+            "roles": ["LAB", "TUTORIAL", "HELP"],
+            "email": "dvidish@uwaterloo.ca"
+        },
+        {
+            "name": "Jonathan Ly",
+            "courses": ["MTE 120"],
+            "roles": ["LAB", "TUTORIAL", "HELP"],
+            "email": "jonathan.ly@uwaterloo.ca"
+        },
+        {
+            "name": "Murad Nassar",
+            "courses": ["MTE 120"],
+            "roles": ["LAB", "TUTORIAL", "HELP"],
+            "email": "m6nassar@uwaterloo.ca"
+        },
+        {
+            "name": "Oleksii Zamozhskyi",
+            "courses": ["MTE 120"],
+            "roles": ["LAB", "TUTORIAL", "HELP"],
+            "email": "ozamozhskyi@uwaterloo.ca"
+        },
+        {
+            "name": "Faisal Ghaffar",
+            "courses": ["MTE 140"],
+            "email": "faisal.ghaffar@uwaterloo.ca"
+        },
+        {
+            "name": "Amin Mirjalili",
+            "courses": ["MTE 140"],
+            "email": "seyedmohammadamin.mirjalili@uwaterloo.ca"
+        },
+        {
+            "name": "Claire Thompson",
+            "courses": ["MTE 119"],
+            "email": "claire.thompson@uwaterloo.ca",
+            "office": "E5-3106",
+            "office_hours": "To be announced during tutorials",
+            "note": "About tutorial problems and specific problems in the textbook"
+        },
+        {
+            "name": "Mercy Ombogo",
+            "courses": ["MTE 119"],
+            "email": "mombogo@uwaterloo.ca",
+            "office": "E3-3106",
+            "office_hours": "To be announced during tutorials",
+            "note": "About tutorial problems and specific problems in the textbook"
+        },
+        {
+            "name": "Bersu Bastug Azer",
+            "courses": ["MTE 111"],
+            "roles": ["TUTORIAL"],
+            "tutorial_day": "Wednesday",
+            "email": "bbastugazer@uwaterloo.ca"
+        },
+        {
+            "name": "Maryam Soleimani",
+            "courses": ["MTE 111"],
+            "roles": ["TUTORIAL"],
+            "tutorial_day": "Friday",
+            "email": "maryam.soleimani@uwaterloo.ca"
+        },
+        {
+            "name": "Ahmed Shahin",
+            "courses": ["MTE 111"],
+            "roles": ["LAB"],
+            "email": "ahmed.shahin@uwaterloo.ca"
+        }
+    ],
+    "lab_supervisors": [
+        {
+            "name": "Anton Gorny",
+            "title": "Lab Supervisor",
+            "courses": ["MTE 111"],
+            "office": "E3-2113",
+            "email": "agorny@uwaterloo.ca"
+        }
+    ]
 }
