@@ -4,10 +4,13 @@ import logging
 from dotenv import load_dotenv
 import os
 import google.generativeai as genai
+import json
 
 # Load environment variables
 load_dotenv()
 
+with open('course_data.json', 'r', encoding='utf-8') as f:
+    course_data = json.load(f)
 # Get keys from .env (using same naming convention as your working FastAPI app)
 GENAI_API_KEY = os.getenv('GENAI_API_KEY')
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
@@ -34,28 +37,66 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 async def on_ready():
     print(f'{bot.user} has connected to Discord!')
 
+def search_course_data(question):
+    q = question.lower()
+    # Map common course nicknames to course codes
+    course_aliases = {
+        "statics": "MTE 119",
+        "calculus": "MATH 118",
+        "algorithms": "MTE 140",
+        # Add more as needed
+    }
+    # Try to match aliases
+    for alias, code in course_aliases.items():
+        if alias in q:
+            for course in course_data.get("courses", []):
+                if course.get("name", "").lower() == code.lower():
+                    # Find professor for this course
+                    for prof in course_data.get("professors", []):
+                        if code in prof.get("courses", []):
+                            info = f"Professor: {prof['name']}\nEmail: {prof.get('email', 'N/A')}\nOffice: {prof.get('office', 'N/A')}"
+                            if "office_hours" in prof:
+                                info += f"\nOffice Hours: {prof['office_hours']}"
+                            return info
+    # Fallback to original logic
+    for course in course_data.get("courses", []):
+        if course.get("name") and course["name"].lower() in q:
+            return f"Course: {course.get('full_name', '')}\nDescription: {course.get('description', '')}\nUnits: {course.get('units', '')}"
+    for prof in course_data.get("professors", []):
+        if prof.get("name") and prof["name"].lower() in q:
+            info = f"Professor: {prof['name']}\nEmail: {prof.get('email', 'N/A')}\nOffice: {prof.get('office', 'N/A')}"
+            if "office_hours" in prof:
+                info += f"\nOffice Hours: {prof['office_hours']}"
+            return info
+    for ta in course_data.get("teaching_assistants", []):
+        if ta.get("name") and ta["name"].lower() in q:
+            return f"TA: {ta['name']}\nEmail: {ta.get('email', 'N/A')}\nCourses: {', '.join(ta.get('courses', []))}"
+    return None
+
 @bot.command()
 async def AI(ctx):
     question = ctx.message.content[4:].strip()
-    
+
     if not question:
         await ctx.send("❗ Please provide a question after the !AI command.")
         return
-    
+
+    # First, try to answer from the JSON file
+    json_answer = search_course_data(question)
+    if json_answer:
+        await ctx.send(json_answer[:2000])
+        return
+
     try:
-        # Use the same model as your working FastAPI app
+        # Use Gemini if no answer found in JSON
         model = genai.GenerativeModel("gemini-1.5-pro")
         response = model.generate_content(question)
-        
-        # Discord has a 2000 character limit for messages
         response_text = response.text
         if len(response_text) > 2000:
-            # Split long responses
             for i in range(0, len(response_text), 2000):
                 await ctx.send(response_text[i:i+2000])
         else:
             await ctx.send(response_text)
-            
     except Exception as e:
         print(f"Gemini API Error: {e}")
         await ctx.send(f"⚠️ Gemini API Error: {str(e)}")

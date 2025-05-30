@@ -365,6 +365,35 @@
             "office": "E3-3106",
             "office_hours": "To be announced during tutorials",
             "note": "About tutorial problems and specific problems in the textbook"
+        },
+        {
+            "name": "Bersu Bastug Azer",
+            "courses": ["MTE 111"],
+            "roles": ["TUTORIAL"],
+            "tutorial_day": "Wednesday",
+            "email": "bbastugazer@uwaterloo.ca"
+        },
+        {
+            "name": "Maryam Soleimani",
+            "courses": ["MTE 111"],
+            "roles": ["TUTORIAL"],
+            "tutorial_day": "Friday",
+            "email": "maryam.soleimani@uwaterloo.ca"
+        },
+        {
+            "name": "Ahmed Shahin",
+            "courses": ["MTE 111"],
+            "roles": ["LAB"],
+            "email": "ahmed.shahin@uwaterloo.ca"
+        }
+    ],
+    "lab_supervisors": [
+        {
+            "name": "Anton Gorny",
+            "title": "Lab Supervisor",
+            "courses": ["MTE 111"],
+            "office": "E3-2113",
+            "email": "agorny@uwaterloo.ca"
         }
     ]
 }
