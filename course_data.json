@@ -224,6 +224,30 @@
             ]
         }
     ],
+
+    "course_aliases": [
+        {
+            "name": "MATH 118",
+            "aliases": ["MTH 118", "Math118", "Calculus 2", "Calculus 2 (Eng)", "calc 2", "calc", "mth118"]
+        },
+        {
+            "name": "MTE 119",
+            "aliases": ["MTE119", "MTE 119", "Statics", "Stats"]
+        },
+        {
+            "name": "MTE 120",
+            "aliases": ["MTE120", "MTE 120", "MTE 120", "Circuits", "Electronics"]
+        },
+        {
+            "name": "MTE 140",
+            "aliases": ["MTE140", "MTE 140", "MTE140", "DSA", "Algorithms", "Algorithms & Data Structures", "CS", "Computer Science", "Computer Science (Eng)"]
+        },
+        {
+            "name": "MTE 111",
+            "aliases": ["MTE111", "MTE 111", "MTE111", "Mats", "Materials", "Structures"]
+        }
+    ],
+
     "professors": [
         {
             "name": "Ryan Trelford",
@@ -288,6 +312,8 @@
             "office_hours": "Book by appointment"
         }
     ],
+
+
     "academic_support": {
         "eist_tutors": {
             "name": "Engineering Instructional Support Tutors (EISTs)",
